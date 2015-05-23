@@ -2,4 +2,4 @@
 
 Bro Note
 
-http://brotherkim.github.com/
+http://brotherkim.github.io/
