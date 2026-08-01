@@ -200,3 +200,149 @@ h2 { font-size: clamp(1.8rem, 4vw, 3rem); }
   * { animation-duration: 0s !important; transition-duration: 0s !important; scroll-behavior: auto !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+.tab-panel[hidden] { display: none; }
+
+.tab-link.is-active {
+  color: #fff;
+  background: var(--accent);
+  box-shadow: 0 8px 18px rgba(59, 130, 246, 0.28);
+}
+
+.trip-panel {
+  --trip-navy: #1d2b4f;
+  --trip-gold: #c9973f;
+  --trip-coral: #e8734a;
+  --trip-teal: #2c7a7b;
+  --trip-bg: #f7f5f0;
+  --trip-card: #ffffff;
+  --trip-line: #e4e0d6;
+  --trip-text: #2a2a2a;
+  --trip-muted: #767268;
+  margin-top: 36px;
+  background: var(--trip-bg);
+  border: 1px solid var(--trip-line);
+  border-radius: 28px;
+  color: var(--trip-text);
+  padding: 24px 14px 44px;
+}
+
+.trip-wrap { max-width: 760px; margin: 0 auto; }
+
+.trip-hero { text-align: center; margin: 18px 0 28px; }
+.trip-tag {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  color: var(--trip-gold);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 6px;
+}
+.trip-hero h1 { font-size: 24px; margin: 0 0 6px; color: var(--trip-navy); }
+.trip-hero p { font-size: 13px; color: var(--trip-muted); margin: 0; }
+
+.trip-day-card {
+  background: var(--trip-card);
+  border-radius: 14px;
+  border: 1px solid var(--trip-line);
+  margin-bottom: 16px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(29, 43, 79, 0.06);
+}
+.trip-day-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  background: var(--trip-navy);
+  color: #fff;
+  padding: 12px 16px;
+}
+.trip-day-head .date { font-weight: 700; font-size: 15px; }
+.trip-day-head .label { font-size: 12px; opacity: 0.85; }
+.trip-day-card.rest .trip-day-head { background: #8a8578; }
+.trip-day-card.highlight .trip-day-head { background: var(--trip-coral); }
+
+.trip-slot {
+  display: flex;
+  padding: 12px 16px;
+  border-top: 1px solid var(--trip-line);
+  gap: 12px;
+}
+.trip-slot:first-of-type { border-top: none; }
+.trip-slot .time {
+  flex: 0 0 78px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--trip-teal);
+  padding-top: 1px;
+}
+.trip-slot .title { font-size: 14.5px; font-weight: 600; color: var(--trip-text); margin-bottom: 2px; }
+.trip-slot .memo { font-size: 12.5px; color: var(--trip-muted); }
+
+.trip-badge {
+  display: inline-block;
+  font-size: 10.5px;
+  font-weight: 700;
+  padding: 1px 7px;
+  border-radius: 20px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+.trip-badge.main { background: #fdecea; color: var(--trip-coral); }
+.trip-badge.rest { background: #efece4; color: #77715f; }
+.trip-badge.alt { background: #eaf3ee; color: var(--trip-teal); }
+
+.trip-book-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+  background: var(--trip-navy);
+  padding: 6px 12px;
+  border-radius: 20px;
+  transition: opacity 0.15s;
+}
+.trip-book-btn:hover { opacity: 0.85; }
+.trip-book-btn::before { content: "🎟"; font-size: 12px; }
+
+.trip-review { margin-top: 36px; }
+.trip-review h2 {
+  font-size: 17px;
+  color: var(--trip-navy);
+  border-bottom: 2px solid var(--trip-navy);
+  padding-bottom: 6px;
+  margin-bottom: 14px;
+}
+.trip-review-card {
+  background: var(--trip-card);
+  border: 1px solid var(--trip-line);
+  border-left: 4px solid var(--trip-coral);
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  font-size: 13.5px;
+}
+.trip-review-card.warn { border-left-color: var(--trip-coral); }
+.trip-review-card.info { border-left-color: var(--trip-teal); }
+.trip-review-card.fix { border-left-color: var(--trip-gold); }
+.trip-review-card b { color: var(--trip-navy); }
+
+.trip-fix-list {
+  background: #fbf7ee;
+  border: 1px solid #ecdfc0;
+  border-radius: 10px;
+  padding: 14px 18px;
+  font-size: 13.5px;
+}
+.trip-fix-list li { margin-bottom: 6px; }
+
+@media (max-width: 640px) {
+  .trip-panel { margin-top: 18px; border-radius: 20px; }
+  .trip-slot { gap: 10px; padding: 12px; }
+  .trip-slot .time { flex-basis: 66px; }
+}
