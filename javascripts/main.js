@@ -1,29 +1,42 @@
-const revealElements = () => document.querySelectorAll('.reveal:not(.show)');
+const setupRevealEffects = () => {
+  const revealElements = () => document.querySelectorAll('.reveal:not(.show)');
 
-const io = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('show');
-        io.unobserve(entry.target);
+  if (!('IntersectionObserver' in window)) {
+    revealElements().forEach((el) => el.classList.add('show'));
+    return () => {};
+  }
+
+  const io = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          io.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.2,
+    }
+  );
+
+  return () => {
+    revealElements().forEach((el) => {
+      if (!el.closest('[hidden]')) {
+        io.observe(el);
       }
     });
-  },
-  {
-    threshold: 0.2,
-  }
-);
-
-const observeVisibleReveals = () => {
-  revealElements().forEach((el) => {
-    if (!el.closest('[hidden]')) {
-      io.observe(el);
-    }
-  });
+  };
 };
 
 const tabLinks = document.querySelectorAll('[data-tab-target]');
 const tabPanels = document.querySelectorAll('[data-tab-panel]');
+const observeVisibleReveals = setupRevealEffects();
+
+const getTabFromHash = () => {
+  const tabName = window.location.hash.replace(/^#/, '');
+  return document.querySelector(`[data-tab-panel="${tabName}"]`) ? tabName : 'resume';
+};
 
 const activateTab = (tabName, updateHash = true) => {
   const selectedPanel = document.querySelector(`[data-tab-panel="${tabName}"]`);
@@ -41,8 +54,8 @@ const activateTab = (tabName, updateHash = true) => {
     panel.hidden = !isActive;
   });
 
-  if (updateHash) {
-    history.replaceState(null, '', `#${tabName}`);
+  if (updateHash && window.location.hash !== `#${tabName}`) {
+    history.pushState(null, '', `#${tabName}`);
   }
 
   observeVisibleReveals();
@@ -56,8 +69,11 @@ tabLinks.forEach((link) => {
   });
 });
 
-const initialTab = window.location.hash === '#trip' ? 'trip' : 'resume';
-activateTab(initialTab, false);
+window.addEventListener('hashchange', () => {
+  activateTab(getTabFromHash(), false);
+});
+
+activateTab(getTabFromHash(), false);
 
 for (const anchor of document.querySelectorAll('a[href^="#"]:not([data-tab-target])')) {
   anchor.addEventListener('click', (event) => {
