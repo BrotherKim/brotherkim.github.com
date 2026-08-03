@@ -223,6 +223,7 @@ h2 { font-size: clamp(1.8rem, 4vw, 3rem); }
 .trip-badge.safe { background: #eaf3ee; color: var(--trip-teal); }
 .trip-badge.tight { background: #fff4d8; color: #9a6a05; }
 .trip-badge.crowded { background: #fdecea; color: var(--trip-coral); }
+.trip-badge.warn { background: #3b1d1d; color: #fff; }
 .trip-badge.all-day { background: var(--trip-navy); color: #fff; }
 .trip-badge.free { background: #eaf3ee; color: var(--trip-teal); }
 .trip-badge.cxl { background: #fff4d8; color: #9a6a05; }
@@ -236,6 +237,7 @@ h2 { font-size: clamp(1.8rem, 4vw, 3rem); }
   text-decoration: none;
 }
 .trip-link-list span { display: block; color: var(--trip-muted); font-size: 12.5px; margin-top: 4px; }
+.trip-copy { color: var(--trip-muted); font-size: 13px; line-height: 1.7; }
 .trip-save-list {
   background: #fff;
   border: 1px dashed var(--trip-teal);
