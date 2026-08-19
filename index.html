@@ -18,7 +18,6 @@
         <a href="#resume" class="tab-link is-active" data-tab-target="resume">Resume</a>
         <a href="#trip" class="tab-link" data-tab-target="trip">LA Trip</a>
         <a href="#mlb-rivals" class="tab-link" data-tab-target="mlb-rivals">MLB9이닝스라이벌</a>
-        <a href="#mlb-rivals-players" class="tab-link" data-tab-target="mlb-rivals-players">선수DB</a>
       </nav>
     </header>
 
@@ -249,29 +248,28 @@
               <p class="rivals-muted">비교 버튼으로 최대 4장을 선택하세요. Tommy Davis '62 vs Pedro Guerrero '87 비교 시 ALA/Hot Zone과 Research Score 차이를 확인할 수 있습니다.</p>
               <div class="rivals-table-wrap" data-comparison></div>
             </section>
-          </div>
-        </section>
 
-        <section id="mlb-rivals-players" class="tab-panel rivals-panel" data-tab-panel="mlb-rivals-players" aria-labelledby="mlb-rivals-players-tab" hidden>
-          <div class="rivals-shell" data-player-db-app>
-            <header class="rivals-hero reveal">
-              <p class="eyebrow">MLB RIVALS PLAYER DATABASE</p>
-              <h1>선수 DB 관리</h1>
-              <p>기본 `public/data/players.json`을 불러온 뒤 브라우저 localStorage에서 추가·수정·삭제합니다. GitHub Pages 정적 사이트라 원본 JSON 파일은 직접 덮어쓸 수 없으므로, 내보내기한 JSON을 저장소에 반영해 커밋하세요.</p>
-              <div class="rivals-actions">
-                <button type="button" class="btn btn-primary" data-player-export>players.json 내보내기</button>
-                <label class="btn btn-secondary file-btn">players.json 가져오기<input type="file" accept="application/json" data-player-import /></label>
-                <button type="button" class="btn btn-secondary" data-player-reset>기본값 복원</button>
-              </div>
-            </header>
+            <section id="mlb-rivals-players" class="rivals-player-section reveal" data-player-db-app aria-labelledby="mlb-rivals-players-title">
+              <header class="rivals-section-head">
+                <div>
+                  <p class="eyebrow">MLB RIVALS PLAYER DATABASE</p>
+                  <h2 id="mlb-rivals-players-title">선수 DB 관리</h2>
+                  <p>기본 <code>public/data/players.json</code>을 불러온 뒤 브라우저 localStorage에서 추가·수정·삭제합니다. GitHub Pages 정적 사이트라 원본 JSON 파일은 직접 덮어쓸 수 없으므로, 내보내기한 JSON을 저장소에 반영해 커밋하세요.</p>
+                </div>
+                <div class="rivals-actions">
+                  <button type="button" class="btn btn-primary" data-player-export>players.json 내보내기</button>
+                  <label class="btn btn-secondary file-btn">players.json 가져오기<input type="file" accept="application/json" data-player-import /></label>
+                  <button type="button" class="btn btn-secondary" data-player-reset>기본값 복원</button>
+                </div>
+              </header>
 
-            <section class="rivals-disclaimer reveal">
-              <strong>JSON 반영 방식</strong>
-              <span>브라우저 보안상 정적 호스팅 페이지가 저장소 파일을 직접 수정할 수 없습니다. 이 탭은 변경 내용을 <b>mlb-rivals-players</b> localStorage에 저장하고, 내보내기 버튼으로 생성한 파일을 <b>public/data/players.json</b>에 교체 반영하는 워크플로를 지원합니다.</span>
-            </section>
+              <section class="rivals-disclaimer">
+                <strong>JSON 반영 방식</strong>
+                <span>브라우저 보안상 정적 호스팅 페이지가 저장소 파일을 직접 수정할 수 없습니다. 이 영역은 변경 내용을 <b>mlb-rivals-players</b> localStorage에 저장하고, 내보내기 버튼으로 생성한 파일을 <b>public/data/players.json</b>에 교체 반영하는 워크플로를 지원합니다.</span>
+              </section>
 
-            <section class="rivals-grid reveal">
-              <section class="rivals-panel-card">
+              <section class="rivals-grid rivals-player-grid">
+                <section class="rivals-panel-card">
                 <h2>선수 추가/수정</h2>
                 <form class="player-form" data-player-form>
                   <input name="id" placeholder="ID 예: shohei-ohtani" required />
@@ -289,12 +287,13 @@
                     <button type="button" class="btn btn-secondary" data-player-clear>입력 초기화</button>
                   </div>
                 </form>
-              </section>
+                </section>
 
-              <section class="rivals-panel-card rivals-search-card">
+                <section class="rivals-panel-card rivals-search-card">
                 <h2>선수 목록</h2>
                 <input class="rivals-input" data-player-search placeholder="선수명, 팀, 포지션 검색" />
                 <div class="rivals-table-wrap"><table class="rivals-table"><thead><tr><th>선수</th><th>팀</th><th>포지션</th><th>타/투</th><th>출처</th><th></th></tr></thead><tbody data-player-list></tbody></table></div>
+                </section>
               </section>
             </section>
           </div>
