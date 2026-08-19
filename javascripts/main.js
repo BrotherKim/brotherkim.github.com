@@ -33,8 +33,18 @@ const tabLinks = document.querySelectorAll('[data-tab-target]');
 const tabPanels = document.querySelectorAll('[data-tab-panel]');
 const observeVisibleReveals = setupRevealEffects();
 
+const getHashTarget = () => {
+  if (!window.location.hash) return null;
+  try {
+    return document.querySelector(window.location.hash);
+  } catch (error) {
+    return null;
+  }
+};
+
 const getTabFromHash = () => {
   const tabName = window.location.hash.replace(/^#/, '');
+  if (tabName === 'mlb-rivals-players') return 'mlb-rivals';
   return document.querySelector(`[data-tab-panel="${tabName}"]`) ? tabName : 'resume';
 };
 
@@ -59,6 +69,11 @@ const activateTab = (tabName, updateHash = true) => {
   }
 
   observeVisibleReveals();
+  const hashTarget = getHashTarget();
+  if (hashTarget && !hashTarget.matches('[data-tab-panel]') && selectedPanel.contains(hashTarget)) {
+    hashTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    return;
+  }
   window.scrollTo({ top: 0, behavior: 'smooth' });
 };
 

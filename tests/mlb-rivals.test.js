@@ -21,8 +21,10 @@ function researchBatter(card){ const s=card.baseStats; return (s.POW*.42+s.EYE*.
 function researchPitcher(stats){ return stats.STU*.28+stats.MOV*.26+stats.CTRL*.22+stats.VEL*.16+stats.STA*.08; }
 assert(cards.length >= 12, 'sample and sourced cards exist');
 assert(players.every((player) => player.id && player.name && player.team && Array.isArray(player.position)), 'player schema');
-assert(html.includes('data-tab-target="mlb-rivals-players"'), 'player DB tab exists');
+assert(!html.includes('data-tab-target="mlb-rivals-players"'), 'player DB is not a top-level tab');
+assert(html.includes('id="mlb-rivals-players" class="rivals-player-section'), 'player DB lives inside MLB Rivals panel');
 assert(html.includes('data-player-db-app'), 'player DB app shell exists');
+assert(mainJs.includes("tabName === 'mlb-rivals-players'"), 'legacy player DB hash opens MLB Rivals tab');
 assert(mainJs.includes('mlb-rivals-players'), 'player DB localStorage key exists');
 assert(mainJs.includes('players.json'), 'player DB imports and exports players JSON');
 assert(mainJs.includes('finiteValues'), 'team averages ignore NaN from missing-stat cards');
