@@ -1,0 +1,4 @@
+[
+  {"id":"tommy-davis","name":"Tommy Davis","team":"LAD","position":["LF","CF"],"bats":"R","throws":"R","source":{"sourceType":"estimated","note":"Sample starter record; verify against current MLB Rivals card database."}},
+  {"id":"pedro-guerrero","name":"Pedro Guerrero","team":"LAD","position":["LF","3B","1B"],"bats":"R","throws":"R","source":{"sourceType":"estimated","note":"Sample starter record; verify against current MLB Rivals card database."}}
+]

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-08-19",
+  "sources": [
+    {
+      "sourceType": "official",
+      "sourceUrl": "https://community.withhive.com/MLB9IRIVALS/ko/",
+      "note": "Official news/community reference; no runtime scraping."
+    },
+    {
+      "sourceType": "experimental",
+      "note": "Hot Zone k=0.00208 is a configurable research assumption, not an official formula."
+    },
+    {
+      "sourceType": "official",
+      "sourceUrl": "https://futuremlb-fn.qpyou.cn/futuremlb/push/update/240522/MLBRV05221100V2.htm",
+      "verifiedAt": "2026-08-19",
+      "note": "Official special card release list indexed by web search; used only for card existence stubs where stats were inaccessible."
+    },
+    {
+      "sourceType": "community",
+      "sourceUrl": "https://www.reddit.com/r/MLB_Rivals/comments/1r17p3q/player_databasewiki/",
+      "verifiedAt": "2026-08-19",
+      "note": "Community thread indicating no comprehensive external Rivals player database was available."
+    }
+  ],
+  "cardDataCoverage": {
+    "status": "partial",
+    "note": "No complete public MLB Rivals card-stat database was found. Official/community release-list stubs are stored with empty baseStats until verifiable stats are available; the app must not invent missing card attributes.",
+    "lastSearchedAt": "2026-08-19",
+    "searchedSources": [
+      "Com2uS/Hive official community",
+      "GameWith MLB Rivals wiki",
+      "Reddit r/MLB_Rivals",
+      "qpyou official update HTML indexed by search"
+    ]
+  }
+}

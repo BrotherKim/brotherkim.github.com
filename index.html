@@ -17,6 +17,8 @@
       <nav class="site-nav" aria-label="Primary">
         <a href="#resume" class="tab-link is-active" data-tab-target="resume">Resume</a>
         <a href="#trip" class="tab-link" data-tab-target="trip">LA Trip</a>
+        <a href="#mlb-rivals" class="tab-link" data-tab-target="mlb-rivals">MLB9이닝스라이벌</a>
+        <a href="#mlb-rivals-players" class="tab-link" data-tab-target="mlb-rivals-players">선수DB</a>
       </nav>
     </header>
 
@@ -183,6 +185,118 @@
             <section class="trip-section reveal"><h2>Google Maps Saved List용</h2><div class="trip-save-list"><p>숙소 | Ktown Los Angeles | 숙소 | 매일 | 높음</p><p>관광지 | Getty Center, 1200 Getty Center Dr, Los Angeles, CA 90049 | 오전 | 높음</p><p>관광지 | Rodeo Drive, Beverly Hills, CA | 오후 짧게 | 중간</p><p>관광지 | Santa Monica Pier, 200 Santa Monica Pier, Santa Monica, CA 90401 | 일몰 | 높음</p><p>테마파크 | Universal Studios Hollywood, 100 Universal City Plaza, Universal City, CA 91608 | 종일 | 높음</p><p>관광지 | Ovation Hollywood, 6801 Hollywood Blvd, Hollywood, CA 90028 | 낮 | 중간</p><p>관광지 | Griffith Observatory, 2800 E Observatory Rd, Los Angeles, CA 90027 | 해질 무렵 | 높음</p><p>테마파크 | Disneyland Resort, 1313 Disneyland Dr, Anaheim, CA 92802 | 종일 | 높음</p><p>관광지 | Dodger Stadium, 1000 Vin Scully Ave, Los Angeles, CA 90012 | 주말 경기 | 높음</p><p>마트 | H Mart LA Koreatown Plaza, 928 S Western Ave #100, Los Angeles, CA 90006 | 도착일 | 높음</p><p>마트 | H Mart Madang Mall, 621 S Western Ave, Los Angeles, CA 90005 | 회복일 | 중간</p><p>마트 | Galleria Market Olympic, 3250 W Olympic Blvd, Los Angeles, CA 90006 | 장거리 전날 | 높음</p><p>마트 | California Market, 450 S Western Ave, Los Angeles, CA 90020 | 할리우드 전후 | 중간</p><p>마트 | Ralphs, 670 S Western Ave, Los Angeles, CA 90005 | 긴급 보급 | 중간</p><p>맛집 | Han Bat Sul Lung Tang, 4163 W 5th St, Los Angeles, CA 90020 | 도착일/회복일 | 높음</p><p>맛집 | Surawon Tofu House, 2833 W Olympic Blvd, Los Angeles, CA 90006 | 점심/저녁 | 높음</p><p>맛집 | House of Pies, 1869 N Vermont Ave, Los Angeles, CA 90027 | 그리피스 전후 | 중간</p><p>맛집 | Plaza Bonita, 352 AZ-64, Grand Canyon Village, AZ 86023 | GC Day 1/2 | 중간</p><p>Grand Canyon 숙소 | Tusayan, AZ 86023 | GC 2박 | 높음</p><p>Grand Canyon 숙소 | El Tovar Hotel, 9 Village Loop Dr, Grand Canyon Village, AZ 86023 | GC 2박 | 높음</p><p>Grand Canyon 숙소 | Yavapai Lodge, 11 Yavapai Lodge Rd, Grand Canyon Village, AZ 86023 | GC 2박 | 높음</p></div></section>
 
             <section class="trip-section reveal"><h2>누락 방지 체크리스트</h2><ul class="trip-checklist"><li><input type="checkbox" aria-label="LA 메인 일정 있음"> LA 메인 일정 있음</li><li><input type="checkbox" aria-label="Grand Canyon 2박 3일 있음"> Grand Canyon 2박 3일 있음</li><li><input type="checkbox" aria-label="Tusayan 숙소 후보 있음"> Tusayan 숙소 후보 있음</li><li><input type="checkbox" aria-label="공원 내부 숙소 후보 있음"> 공원 내부 숙소 후보 있음</li><li><input type="checkbox" aria-label="다저스 링크 있음"> 다저스 링크 있음</li><li><input type="checkbox" aria-label="유니버설 링크 있음"> 유니버설 링크 있음</li><li><input type="checkbox" aria-label="디즈니랜드 링크 있음"> 디즈니랜드 링크 있음</li><li><input type="checkbox" aria-label="그리피스 링크 있음"> 그리피스 링크 있음</li><li><input type="checkbox" aria-label="Grand Canyon road condition 링크 있음"> Grand Canyon road condition 링크 있음</li><li><input type="checkbox" aria-label="마트 주소 정리 있음"> 마트 주소 정리 있음</li><li><input type="checkbox" aria-label="Google Maps 저장용 리스트 있음"> Google Maps 저장용 리스트 있음</li></ul></section>
+          </div>
+        </section>
+
+
+        <section id="mlb-rivals" class="tab-panel rivals-panel" data-tab-panel="mlb-rivals" aria-labelledby="mlb-rivals-tab" hidden>
+          <div class="rivals-shell" data-rivals-app>
+            <header class="rivals-hero reveal">
+              <p class="eyebrow">MLB RIVALS DECK BUILDER</p>
+              <h1>MLB9이닝스라이벌 카드·덱 분석 도구</h1>
+              <p>Static JSON + localStorage 구조로 카드 검색, 덱 요약, Excel Score와 Research Score를 분리해 비교합니다.</p>
+              <div class="rivals-actions">
+                <button type="button" class="btn btn-primary" data-rivals-save>덱 저장</button>
+                <button type="button" class="btn btn-secondary" data-rivals-new>새 덱</button>
+              </div>
+            </header>
+
+            <section class="rivals-disclaimer reveal">
+              <strong>데이터 신뢰도 안내</strong>
+              <span>Sample card는 <b>unverified</b> 상태이며, Hot Zone k=0.00208은 <b>EXPERIMENTAL</b> 분석 가정입니다. 게임 공식 공식으로 표시하지 않습니다.</span>
+            </section>
+
+            <section class="rivals-summary reveal" aria-label="Team summary">
+              <article><span>TEAM OVR</span><b data-team-ovr>--</b></article>
+              <article><span>EXCEL SCORE</span><b data-team-excel>--</b></article>
+              <article><span>RESEARCH SCORE</span><b data-team-research>--</b></article>
+            </section>
+
+            <section class="rivals-grid reveal">
+              <aside class="rivals-panel-card">
+                <h2>LINEUP</h2>
+                <input class="rivals-input" data-deck-name value="My Dodgers Deck" aria-label="Deck name" />
+                <div class="rivals-lineup" data-lineup></div>
+              </aside>
+
+              <section class="rivals-panel-card rivals-search-card">
+                <h2>카드 검색</h2>
+                <form class="rivals-filters" data-rivals-filters>
+                  <input name="name" placeholder="선수명" />
+                  <input name="team" placeholder="팀 예: LAD" />
+                  <input name="year" type="number" placeholder="연도" />
+                  <select name="cardType"><option value="">카드 타입</option><option>PRIME</option><option>NORMAL</option><option>SIGNATURE</option></select>
+                  <input name="position" placeholder="포지션" />
+                  <input name="minOvr" type="number" placeholder="OVR ≥" />
+                  <input name="minPow" type="number" placeholder="POW ≥" />
+                  <input name="minCon" type="number" placeholder="CON ≥" />
+                  <input name="minEye" type="number" placeholder="EYE ≥" />
+                  <input name="alaMin" type="number" placeholder="ALA min" />
+                  <input name="alaMax" type="number" placeholder="ALA max" />
+                  <button type="submit">검색</button><button type="reset">초기화</button>
+                </form>
+                <div class="rivals-table-wrap"><table class="rivals-table"><thead><tr><th>Card</th><th>OVR</th><th>POW</th><th>CON</th><th>EYE</th><th>ALA</th><th>HZ</th><th>Score</th><th></th></tr></thead><tbody data-card-list></tbody></table></div>
+              </section>
+
+              <aside class="rivals-panel-card" data-card-detail>
+                <h2>CARD ANALYSIS</h2>
+                <p>카드를 선택하면 상세 분석이 표시됩니다.</p>
+              </aside>
+            </section>
+
+            <section class="rivals-panel-card reveal">
+              <h2>CARD COMPARISON</h2>
+              <p class="rivals-muted">비교 버튼으로 최대 4장을 선택하세요. Tommy Davis '62 vs Pedro Guerrero '87 비교 시 ALA/Hot Zone과 Research Score 차이를 확인할 수 있습니다.</p>
+              <div class="rivals-table-wrap" data-comparison></div>
+            </section>
+          </div>
+        </section>
+
+        <section id="mlb-rivals-players" class="tab-panel rivals-panel" data-tab-panel="mlb-rivals-players" aria-labelledby="mlb-rivals-players-tab" hidden>
+          <div class="rivals-shell" data-player-db-app>
+            <header class="rivals-hero reveal">
+              <p class="eyebrow">MLB RIVALS PLAYER DATABASE</p>
+              <h1>선수 DB 관리</h1>
+              <p>기본 `public/data/players.json`을 불러온 뒤 브라우저 localStorage에서 추가·수정·삭제합니다. GitHub Pages 정적 사이트라 원본 JSON 파일은 직접 덮어쓸 수 없으므로, 내보내기한 JSON을 저장소에 반영해 커밋하세요.</p>
+              <div class="rivals-actions">
+                <button type="button" class="btn btn-primary" data-player-export>players.json 내보내기</button>
+                <label class="btn btn-secondary file-btn">players.json 가져오기<input type="file" accept="application/json" data-player-import /></label>
+                <button type="button" class="btn btn-secondary" data-player-reset>기본값 복원</button>
+              </div>
+            </header>
+
+            <section class="rivals-disclaimer reveal">
+              <strong>JSON 반영 방식</strong>
+              <span>브라우저 보안상 정적 호스팅 페이지가 저장소 파일을 직접 수정할 수 없습니다. 이 탭은 변경 내용을 <b>mlb-rivals-players</b> localStorage에 저장하고, 내보내기 버튼으로 생성한 파일을 <b>public/data/players.json</b>에 교체 반영하는 워크플로를 지원합니다.</span>
+            </section>
+
+            <section class="rivals-grid reveal">
+              <section class="rivals-panel-card">
+                <h2>선수 추가/수정</h2>
+                <form class="player-form" data-player-form>
+                  <input name="id" placeholder="ID 예: shohei-ohtani" required />
+                  <input name="name" placeholder="선수명" required />
+                  <input name="team" placeholder="팀 예: LAD" required />
+                  <input name="position" placeholder="포지션 CSV 예: DH,SP" required />
+                  <select name="bats"><option value="">타석</option><option>L</option><option>R</option><option>S</option></select>
+                  <select name="throws"><option value="">투구</option><option>L</option><option>R</option></select>
+                  <input name="birthYear" type="number" placeholder="출생연도" />
+                  <select name="sourceType"><option value="user">USER</option><option value="official">OFFICIAL</option><option value="community">COMMUNITY</option><option value="estimated">ESTIMATED</option><option value="experimental">EXPERIMENTAL</option></select>
+                  <input name="sourceUrl" placeholder="출처 URL" />
+                  <textarea name="note" placeholder="메모"></textarea>
+                  <div class="rivals-actions">
+                    <button type="submit" class="btn btn-primary">저장</button>
+                    <button type="button" class="btn btn-secondary" data-player-clear>입력 초기화</button>
+                  </div>
+                </form>
+              </section>
+
+              <section class="rivals-panel-card rivals-search-card">
+                <h2>선수 목록</h2>
+                <input class="rivals-input" data-player-search placeholder="선수명, 팀, 포지션 검색" />
+                <div class="rivals-table-wrap"><table class="rivals-table"><thead><tr><th>선수</th><th>팀</th><th>포지션</th><th>타/투</th><th>출처</th><th></th></tr></thead><tbody data-player-list></tbody></table></div>
+              </section>
+            </section>
           </div>
         </section>
       </div>
