@@ -1,0 +1,382 @@
+[
+  {
+    "id": "tommy-davis-1962-normal-lad",
+    "playerId": "tommy-davis",
+    "playerName": "Tommy Davis",
+    "team": "LAD",
+    "year": 1962,
+    "cardType": "NORMAL",
+    "grade": "DIAMOND",
+    "position": [
+      "LF",
+      "CF"
+    ],
+    "role": "BATTER",
+    "baseStats": {
+      "POW": 84,
+      "CON": 78,
+      "EYE": 75,
+      "SPD": 72,
+      "FLD": 70,
+      "STA": 68
+    },
+    "displayOvr": 72,
+    "launchAngle": 15,
+    "hotZones": [
+      {
+        "zone": "1",
+        "strength": 5,
+        "type": "HOT"
+      },
+      {
+        "zone": "2",
+        "strength": 5,
+        "type": "HOT"
+      },
+      {
+        "zone": "3",
+        "strength": 5,
+        "type": "HOT"
+      },
+      {
+        "zone": "4",
+        "strength": 5,
+        "type": "HOT"
+      },
+      {
+        "zone": "5",
+        "strength": 5,
+        "type": "HOT"
+      },
+      {
+        "zone": "6",
+        "strength": 5,
+        "type": "HOT"
+      },
+      {
+        "zone": "7",
+        "strength": 4,
+        "type": "HOT"
+      },
+      {
+        "zone": "8",
+        "strength": 5,
+        "type": "HOT"
+      },
+      {
+        "zone": "9",
+        "strength": 4,
+        "type": "HOT"
+      }
+    ],
+    "dataStatus": "unverified",
+    "source": {
+      "sourceType": "estimated",
+      "note": "Sample card for UI/testing; not confirmed as live game data."
+    }
+  },
+  {
+    "id": "pedro-guerrero-1985-prime-lad",
+    "playerId": "pedro-guerrero",
+    "playerName": "Pedro Guerrero",
+    "team": "LAD",
+    "year": 1985,
+    "cardType": "PRIME",
+    "grade": "DIAMOND",
+    "position": [
+      "LF",
+      "3B"
+    ],
+    "role": "BATTER",
+    "baseStats": {
+      "POW": 86,
+      "CON": 76,
+      "EYE": 74,
+      "SPD": 68,
+      "FLD": 64,
+      "STA": 70
+    },
+    "displayOvr": 72,
+    "launchAngle": null,
+    "hotZones": [],
+    "dataStatus": "unverified",
+    "source": {
+      "sourceType": "estimated",
+      "note": "Sample card for UI/testing; not confirmed as live game data."
+    }
+  },
+  {
+    "id": "pedro-guerrero-1987-prime-lad",
+    "playerId": "pedro-guerrero",
+    "playerName": "Pedro Guerrero",
+    "team": "LAD",
+    "year": 1987,
+    "cardType": "PRIME",
+    "grade": "DIAMOND",
+    "position": [
+      "LF",
+      "1B"
+    ],
+    "role": "BATTER",
+    "baseStats": {
+      "POW": 89,
+      "CON": 81,
+      "EYE": 77,
+      "SPD": 68,
+      "FLD": 64,
+      "STA": 70
+    },
+    "displayOvr": 72,
+    "launchAngle": 16,
+    "hotZones": [
+      {
+        "zone": "1",
+        "strength": 8,
+        "type": "HOT"
+      },
+      {
+        "zone": "2",
+        "strength": 8,
+        "type": "HOT"
+      },
+      {
+        "zone": "3",
+        "strength": 8,
+        "type": "HOT"
+      },
+      {
+        "zone": "4",
+        "strength": 8,
+        "type": "HOT"
+      },
+      {
+        "zone": "5",
+        "strength": 8,
+        "type": "HOT"
+      },
+      {
+        "zone": "6",
+        "strength": 8,
+        "type": "HOT"
+      },
+      {
+        "zone": "7",
+        "strength": 8,
+        "type": "HOT"
+      },
+      {
+        "zone": "8",
+        "strength": 8,
+        "type": "HOT"
+      },
+      {
+        "zone": "9",
+        "strength": 8,
+        "type": "HOT"
+      }
+    ],
+    "dataStatus": "unverified",
+    "source": {
+      "sourceType": "estimated",
+      "note": "Sample card for UI/testing; not confirmed as live game data."
+    }
+  },
+  {
+    "id": "mike-stanley-special-phi",
+    "playerId": "mike-stanley",
+    "playerName": "Mike Stanley",
+    "team": "PHI",
+    "year": null,
+    "cardType": "OTHER",
+    "grade": "OTHER",
+    "position": [],
+    "role": "UNKNOWN",
+    "baseStats": {},
+    "displayOvr": null,
+    "launchAngle": null,
+    "hotZones": [],
+    "dataStatus": "sourced-missing-stats",
+    "source": {
+      "sourceType": "official",
+      "sourceUrl": "https://futuremlb-fn.qpyou.cn/futuremlb/push/update/240522/MLBRV05221100V2.htm",
+      "verifiedAt": "2026-08-19",
+      "note": "Listed in official MLB RIVALS Special Card list search result; detailed in-game stats were not publicly available in an accessible source during this update."
+    }
+  },
+  {
+    "id": "greg-luzinski-special-nyy",
+    "playerId": "greg-luzinski",
+    "playerName": "Greg Luzinski",
+    "team": "NYY",
+    "year": null,
+    "cardType": "OTHER",
+    "grade": "OTHER",
+    "position": [],
+    "role": "UNKNOWN",
+    "baseStats": {},
+    "displayOvr": null,
+    "launchAngle": null,
+    "hotZones": [],
+    "dataStatus": "sourced-missing-stats",
+    "source": {
+      "sourceType": "official",
+      "sourceUrl": "https://futuremlb-fn.qpyou.cn/futuremlb/push/update/240522/MLBRV05221100V2.htm",
+      "verifiedAt": "2026-08-19",
+      "note": "Listed in official MLB RIVALS Special Card list search result; detailed in-game stats were not publicly available in an accessible source during this update."
+    }
+  },
+  {
+    "id": "gerrit-cole-special-phi",
+    "playerId": "gerrit-cole",
+    "playerName": "Gerrit Cole",
+    "team": "PHI",
+    "year": null,
+    "cardType": "OTHER",
+    "grade": "OTHER",
+    "position": [],
+    "role": "UNKNOWN",
+    "baseStats": {},
+    "displayOvr": null,
+    "launchAngle": null,
+    "hotZones": [],
+    "dataStatus": "sourced-missing-stats",
+    "source": {
+      "sourceType": "official",
+      "sourceUrl": "https://futuremlb-fn.qpyou.cn/futuremlb/push/update/240522/MLBRV05221100V2.htm",
+      "verifiedAt": "2026-08-19",
+      "note": "Listed in official MLB RIVALS Special Card list search result; detailed in-game stats were not publicly available in an accessible source during this update."
+    }
+  },
+  {
+    "id": "zack-wheeler-special-nyy",
+    "playerId": "zack-wheeler",
+    "playerName": "Zack Wheeler",
+    "team": "NYY",
+    "year": null,
+    "cardType": "OTHER",
+    "grade": "OTHER",
+    "position": [],
+    "role": "UNKNOWN",
+    "baseStats": {},
+    "displayOvr": null,
+    "launchAngle": null,
+    "hotZones": [],
+    "dataStatus": "sourced-missing-stats",
+    "source": {
+      "sourceType": "official",
+      "sourceUrl": "https://futuremlb-fn.qpyou.cn/futuremlb/push/update/240522/MLBRV05221100V2.htm",
+      "verifiedAt": "2026-08-19",
+      "note": "Listed in official MLB RIVALS Special Card list search result; detailed in-game stats were not publicly available in an accessible source during this update."
+    }
+  },
+  {
+    "id": "tino-martinez-special-phi",
+    "playerId": "tino-martinez",
+    "playerName": "Tino Martinez",
+    "team": "PHI",
+    "year": null,
+    "cardType": "OTHER",
+    "grade": "OTHER",
+    "position": [],
+    "role": "UNKNOWN",
+    "baseStats": {},
+    "displayOvr": null,
+    "launchAngle": null,
+    "hotZones": [],
+    "dataStatus": "sourced-missing-stats",
+    "source": {
+      "sourceType": "official",
+      "sourceUrl": "https://futuremlb-fn.qpyou.cn/futuremlb/push/update/240522/MLBRV05221100V2.htm",
+      "verifiedAt": "2026-08-19",
+      "note": "Listed in official MLB RIVALS Special Card list search result; detailed in-game stats were not publicly available in an accessible source during this update."
+    }
+  },
+  {
+    "id": "dick-allen-special-nyy",
+    "playerId": "dick-allen",
+    "playerName": "Dick Allen",
+    "team": "NYY",
+    "year": null,
+    "cardType": "OTHER",
+    "grade": "OTHER",
+    "position": [],
+    "role": "UNKNOWN",
+    "baseStats": {},
+    "displayOvr": null,
+    "launchAngle": null,
+    "hotZones": [],
+    "dataStatus": "sourced-missing-stats",
+    "source": {
+      "sourceType": "official",
+      "sourceUrl": "https://futuremlb-fn.qpyou.cn/futuremlb/push/update/240522/MLBRV05221100V2.htm",
+      "verifiedAt": "2026-08-19",
+      "note": "Listed in official MLB RIVALS Special Card list search result; detailed in-game stats were not publicly available in an accessible source during this update."
+    }
+  },
+  {
+    "id": "chien-ming-wang-special-phi",
+    "playerId": "chien-ming-wang",
+    "playerName": "Chien-Ming Wang",
+    "team": "PHI",
+    "year": null,
+    "cardType": "OTHER",
+    "grade": "OTHER",
+    "position": [],
+    "role": "UNKNOWN",
+    "baseStats": {},
+    "displayOvr": null,
+    "launchAngle": null,
+    "hotZones": [],
+    "dataStatus": "sourced-missing-stats",
+    "source": {
+      "sourceType": "official",
+      "sourceUrl": "https://futuremlb-fn.qpyou.cn/futuremlb/push/update/240522/MLBRV05221100V2.htm",
+      "verifiedAt": "2026-08-19",
+      "note": "Listed in official MLB RIVALS Special Card list search result; detailed in-game stats were not publicly available in an accessible source during this update."
+    }
+  },
+  {
+    "id": "brett-myers-special-nyy",
+    "playerId": "brett-myers",
+    "playerName": "Brett Myers",
+    "team": "NYY",
+    "year": null,
+    "cardType": "OTHER",
+    "grade": "OTHER",
+    "position": [],
+    "role": "UNKNOWN",
+    "baseStats": {},
+    "displayOvr": null,
+    "launchAngle": null,
+    "hotZones": [],
+    "dataStatus": "sourced-missing-stats",
+    "source": {
+      "sourceType": "official",
+      "sourceUrl": "https://futuremlb-fn.qpyou.cn/futuremlb/push/update/240522/MLBRV05221100V2.htm",
+      "verifiedAt": "2026-08-19",
+      "note": "Listed in official MLB RIVALS Special Card list search result; detailed in-game stats were not publicly available in an accessible source during this update."
+    }
+  },
+  {
+    "id": "gary-sheffield-special-nyy",
+    "playerId": "gary-sheffield",
+    "playerName": "Gary Sheffield",
+    "team": "NYY",
+    "year": null,
+    "cardType": "OTHER",
+    "grade": "OTHER",
+    "position": [],
+    "role": "UNKNOWN",
+    "baseStats": {},
+    "displayOvr": null,
+    "launchAngle": null,
+    "hotZones": [],
+    "dataStatus": "sourced-missing-stats",
+    "source": {
+      "sourceType": "official",
+      "sourceUrl": "https://futuremlb-fn.qpyou.cn/futuremlb/push/update/240522/MLBRV05221100V2.htm",
+      "verifiedAt": "2026-08-19",
+      "note": "Listed in official MLB RIVALS Special Card list search result; detailed in-game stats were not publicly available in an accessible source during this update."
+    }
+  }
+]
